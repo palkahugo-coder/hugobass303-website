@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#120202">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit:ital,wght@1,900&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{--card:#140303;--tile:#230606;--tile2:#2e0808;--line:rgba(255,255,255,.1);--red:#e10600;--red-hi:#ff2a1a;--text:#fff;--muted:rgba(255,255,255,.62);color-scheme:dark}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--card:#140303;--text:#fff}}
@@ -44,8 +44,11 @@ a{color:inherit}img{display:block;max-width:100%}svg{fill:currentColor}
   -webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 96%);mask-image:linear-gradient(180deg,#000 70%,transparent 96%);
   filter:drop-shadow(0 0 30px rgba(225,6,0,.35))}
 .photo::after{z-index:2}
-.name{position:relative;z-index:3;text-align:center;margin:-34px 0 0;font-size:clamp(40px,11vw,58px);line-height:1;transform:skewX(-10deg)}
-.name b{color:var(--red);font-weight:400}
+.name{position:relative;z-index:3;text-align:center;margin:-34px 0 0;font-size:clamp(40px,11.5vw,60px);line-height:1.1}
+.name.f{font-family:"Kanit","Arial Black",sans-serif;font-weight:900;font-style:italic;letter-spacing:-.01em}
+.name span,.name b{background:linear-gradient(180deg,#fff 0%,#cfcfcf 38%,#6d6d6d 52%,#f2f2f2 64%,#9a9a9a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+.name b{font-weight:inherit;background-image:linear-gradient(180deg,#ff8a7a,#e10600 55%,#7a0300)}
+.name{filter:drop-shadow(0 2px 0 #000) drop-shadow(0 0 14px rgba(225,6,0,.45))}
 .tagline{text-align:center;margin:8px 0 0;color:var(--muted);font-size:12px;letter-spacing:.2em}
 .icons{display:flex;justify-content:center;gap:20px;margin:20px 0 6px}
 .icons a{width:26px;height:26px;display:grid;place-items:center;color:#fff;opacity:.9;transition:color .15s,transform .15s}
@@ -126,7 +129,7 @@ footer{text-align:center;color:var(--muted);font-size:11px;letter-spacing:.14em;
 
 <main class="card">
   <div class="photo"><video class="hv" data-portrait="bg_portrait.mp4" data-landscape="bg_landscape.mp4" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video><img src="photo.webp" alt="HugoBass303" width="900" height="900"></div>
-  <h1 class="name f">HugoBass<b>303</b></h1>
+  <h1 class="name f"><span>HugoBass</span><b>303</b></h1>
   <p class="tagline f">DJ / Producer · Berlin · Bounce · Trance · Hard Dance</p>
   <nav class="icons" aria-label="Social Media">
     <a href="https://www.instagram.com/hugobass303/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i2"/></svg></a>
